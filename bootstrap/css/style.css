@@ -201,3 +201,47 @@ footer{
 float:right;
 margin-top:100px;
 }
+
+/* About page css below */
+
+.hero-image2{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../img/children.jpg");
+
+  /* Set a specific height */
+  height: 30vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bar3{
+  background-color:#2BC1DF;
+  height:2em;
+}
+
+#container2{
+  width:80%;
+  margin: 0 auto;
+}
+
+.link{
+  float:right;
+}
+
+span{
+  text-align:right;
+}
+
+#title{
+  border-bottom:solid;
+  border-width:15px;
+  border-color:#2BC1DF;
+  color:#2BC1DF;
+}
+
+#title h2{
+  font-size:4em;
+}
