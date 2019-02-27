@@ -1,46 +1,8 @@
+#poll{
+    height:100%;
+  }
+  
+  .formFooter{
+    display:none;
+  }
 
-body{
-	font-family: 'Roboto', sans-serif;
-
-}
-
-section{
-    
-    float:left;
-    width:100%; 
-padding:30px 0;
-}
-
-.card {
-    -moz-box-direction: normal;
-    -moz-box-orient: vertical;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    margin-bottom:1px;
-    border:none;
-}
-
-.card-header {
-    background-color: white;
-    margin-bottom: 0;
-		border-bottom:solid;
-		border-width:10px;
-		border-color:#2BC1DF;
-    
-}
-.card-header a{
-    width:97%;
-    float:left;
-    color:#2BC1DF;
-}
-.card-header p{
-    margin:0;
-}
-
-.card-header h3{
-    margin:0 0 0px;
-    font-size:2em;
-    font-weight:bold;
-}

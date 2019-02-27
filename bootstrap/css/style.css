@@ -1,5 +1,7 @@
 body, html {
     width:100%;
+    font-family: 'Roboto', sans-serif;
+  
 }
 
 /* The hero image */
@@ -32,7 +34,7 @@ header{
   width:100;
 }
 
-
+/* ----------------------------------Nav barrrrr stuff------------------------------------------- */
 /* change the background color */
 .navbar-custom {
   background-color:#175E6C;
@@ -73,31 +75,11 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
 
 .navbar-brand{
 
-  font-size:2em;
+  font-size:2.5rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  body{
-    font-family: 'Roboto', sans-serif;
-  
-  }
-
+/*---------------------------------- Nav bar end--------------------------------------- */
+/* --------------------------------index page stuff------------------------------------------------- */
   main h2{
     font-size:3em;
     border-bottom:solid;
@@ -191,6 +173,13 @@ footer{
   width:100%;
 }
 
+footer a, footer a:hover, footer a:visited{
+  color:#2BC1DF;
+}
+
+.content a, content a:hover, content a:visited{
+  color:#2BC1DF;
+}
 #container{
   margin-bottom:8em;
 }
@@ -202,7 +191,7 @@ float:right;
 margin-top:100px;
 }
 
-/* About page css below */
+/* --------------------------------------------------------links page css below -----------------------------------------------------------------*/
 
 .hero-image2{
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../img/children.jpg");
@@ -210,8 +199,6 @@ margin-top:100px;
   /* Set a specific height */
   height: 30vh;
 
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -255,15 +242,12 @@ background-color:white;
   border:none;
 }
 
-span{float:right;}
-
 
 .inner-container{
 
   display:flex;
   flex-wrap:wrap;
   justify-content: space-between;
-  align-content:space-around
 }
 
 .inner-container .card{
@@ -277,10 +261,93 @@ min-width:400px;
 }
 
 
+
+/* bullet point list styler for links page */
+
+.card ul li{
+  font-size:2.5rem;
+  padding-left: 1em; 
+  text-indent: -.7em;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 2.5rem;
+}
+
+.card ul li::before {
+  content: "•";
+  font-size:4rem;
+  color: #175E6C; /* or whatever color you prefer */
+}
+.link-name{
+
+  font-size:1.5rem;
+  line-height: 10px;
+  
+  }
+
+
+
+
+
+/* end */
+
+
 @media only screen and (max-width: 600px) {
   .inner-container .card{
     max-width:350px;
     min-width:300px;
     
     }
+}
+
+
+
+/* For the scroll down header since it is a clone */
+.cloned .navbar-brand a,.cloned .navbar-brand a:hover, .cloned .navbar-brand a:visited { 
+color:white;
+text-decoration:none;
+}
+
+/* keeping footer at the bottom */
+html, body{
+  height:100%;
+
+}
+
+#big-container{
+  min-height:100%
+}
+
+.content{
+  overflow:auto;
+  padding-bottom:100px;
+}
+
+footer{
+  position: relative;
+  margin-top:-100px;
+  clear:both;
+
+}
+
+
+
+
+
+/* 
+for the links page cards */
+
+.card ul{
+
+
+font-size:1.2rem;
+
+}
+
+
+
+.card ul a, .card ul a:hover, .card ul a:visited{
+
+  color:#2BC1DF;
 }

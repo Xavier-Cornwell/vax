@@ -1,3 +1,7 @@
+//This file is for the header in the index or homepage
+
+
+
 $('.head').addClass('original').clone().insertAfter('.head').addClass('cloned').css('position','fixed').css('top','0').css('margin-top','0').css('z-index','500').removeClass('original').hide();
 
 //Init scrolling
@@ -6,7 +10,7 @@ $('.head').addClass('original').clone().insertAfter('.head').addClass('cloned').
 
 let scrollIntervalID = setInterval(stickIt, 10);
 
-
+var count = 0;
 function stickIt() {
 
   let orgElementPos = $('.original').offset();
@@ -20,7 +24,16 @@ function stickIt() {
     coordsOrgElement = orgElement.offset(),
     leftOrgElement = coordsOrgElement.left,
     widthOrgElement = orgElement.css('width');
+    
+    while(count < 1){     
+      console.log(count);
+      count = count+1;
+    $('.cloned .navbar-brand').append('<a href="' + "index.html" + '">' +'<h1> <i class="fas fa-syringe"></i> VaccinesTruth'+ '</a>');
+    
+    }
+    // $('.cloned .navbar-brand').html('<h1> <i class="fas fa-syringe"></i> VaccinesTruth');
     $('.cloned').css('left',leftOrgElement+'px').css('top',0).css('width',widthOrgElement).show();
+
     $('.original').css('visibility','hidden');
   } else {
     // not scrolled past the menu; only show the original menu.
